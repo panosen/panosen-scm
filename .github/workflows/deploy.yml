@@ -3,6 +3,10 @@ name: deploy
 
 on:
   workflow_dispatch:
+
+  release:
+    types:
+      - created
       
 jobs:
   build:

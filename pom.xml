@@ -5,7 +5,7 @@
 
     <groupId>com.panosen</groupId>
     <artifactId>scm</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <packaging>pom</packaging>
 
@@ -101,7 +101,8 @@
 
                 <executions>
                     <execution>
-                        <id>ban-duplicate-class-enforce</id>
+                        <id>panosen-maven-enforce</id>
+                        <phase>validate</phase>
                         <goals>
                             <goal>enforce</goal>
                         </goals>
@@ -111,14 +112,20 @@
                                 <banDuplicateClasses>
                                     <findAllDuplicates>true</findAllDuplicates>
                                 </banDuplicateClasses>
+
+                                <!-- extra-enforcer-rules: http://www.mojohaus.org/extra-enforcer-rules -->
+                                <banCircularDependencies/>
+
                                 <!-- Built-In Rules http://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html -->
                                 <requireMavenVersion>
                                     <version>[3.3.9,)</version>
                                 </requireMavenVersion>
+
                                 <!-- Built-In Rules http://maven.apache.org/enforcer/enforcer-rules/requireJavaVersion.html -->
                                 <requireJavaVersion>
                                     <version>[1.8.0,)</version>
                                 </requireJavaVersion>
+
                                 <!-- Built-In Rules http://maven.apache.org/enforcer/enforcer-rules/bannedDependencies.html -->
                                 <bannedDependencies>
                                     <excludes>

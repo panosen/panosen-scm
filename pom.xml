@@ -5,7 +5,7 @@
 
     <groupId>com.panosen</groupId>
     <artifactId>scm</artifactId>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
 
     <packaging>pom</packaging>
 
@@ -101,7 +101,7 @@
 
                 <executions>
                     <execution>
-                        <id>panosen-maven-enforce</id>
+                        <id>default-cli</id>
                         <phase>validate</phase>
                         <goals>
                             <goal>enforce</goal>

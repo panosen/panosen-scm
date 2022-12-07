@@ -5,7 +5,7 @@
 
     <groupId>com.panosen</groupId>
     <artifactId>scm</artifactId>
-    <version>1.4.0</version>
+    <version>1.5.0</version>
 
     <packaging>pom</packaging>
 
@@ -162,7 +162,7 @@
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
-                    <skip>${staging.skip}</skip>
+                    <skipNexusStagingDeployMojo>${staging.skip}</skipNexusStagingDeployMojo>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>

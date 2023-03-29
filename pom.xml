@@ -51,7 +51,7 @@
         <maven-enforcer-plugin_version>3.2.1</maven-enforcer-plugin_version>
 
         <!-- extra-enforcer-rules-pugin  -->
-        <extra-enforcer-rules_version>1.6.1</extra-enforcer-rules_version>
+        <extra-enforcer-rules_version>1.6.2</extra-enforcer-rules_version>
 
         <enforcer.requireVersion.skip>false</enforcer.requireVersion.skip>
         <enforcer.requireVersion.onerror.fail>true</enforcer.requireVersion.onerror.fail>

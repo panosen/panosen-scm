@@ -58,7 +58,7 @@
 
         <gpg.skip>true</gpg.skip>
 
-        <maven-gpg-plugin_version>3.2.6</maven-gpg-plugin_version>
+        <maven-gpg-plugin_version>3.2.7</maven-gpg-plugin_version>
 
         <nexus-staging-maven-plugin_version>1.7.0</nexus-staging-maven-plugin_version>
 
